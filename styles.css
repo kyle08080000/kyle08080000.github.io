@@ -57,6 +57,31 @@ h2 {
   max-width: 100%;
   height: auto;
 }
+/* Images container */
+.images-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.image-single,
+.image-pair {
+  margin-bottom: 20px;
+}
+
+.image-single img {
+  width: 100%;
+}
+
+.image-pair {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-pair img {
+  width: 48%;
+}
 
 
 /* 页脚 */
