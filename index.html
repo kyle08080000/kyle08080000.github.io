@@ -32,19 +32,21 @@
     <section id="skills">
       <h2>證書</h2>
       <!-- 在此處添加您的技能與經歷 -->
+      <div>
+        <span id="ocp819">OCP819</span>
+      </div>
       <div id="certificate-container"></div>
-      <!-- <embed src="https://drive.google.com/uc?export=view&id=1q3eTOpKUfilsJx8Z3JBcQ2pHe2YOM4Hv" type="application/pdf" width="100%" height="100px" /> -->
     </section>
 
-    <!-- <section id="about">
-      <h2>關於我</h2> -->
+    <section id="about">
+      <h2>關於我</h2>
       <!-- 在此處添加關於您的信息 -->
-    <!-- </section> -->
+    </section>
 
-    <!-- <section id="contact">
-      <h2>聯繫方式</h2> -->
+    <section id="contact">
+      <h2>聯繫方式</h2>
       <!-- 在此處添加您的聯繫方式 -->
-    <!-- </section> -->
+    </section>
   </main>
 
   <footer>
@@ -52,7 +54,7 @@
   </footer>
 
   <script>
-    document.querySelector("#skills").addEventListener("click", function () {
+    document.querySelector("#ocp819").addEventListener("click", function () {
       const container = document.querySelector("#certificate-container");
       if (container.innerHTML) {
         container.innerHTML = '';
@@ -61,6 +63,5 @@
       }
     });
   </script>
-  
 </body>
 </html>
