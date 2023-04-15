@@ -84,8 +84,10 @@ h2 {
 }
 
 .image1 {
-  width: 50%;
+  width: 200px;
+  height: auto;
 }
+
 
 
 /* 页脚 */
