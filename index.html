@@ -54,10 +54,13 @@
   <script>
     document.querySelector("#skills").addEventListener("click", function () {
       const container = document.querySelector("#certificate-container");
-      if (!container.innerHTML) {
+      if (container.innerHTML) {
+        container.innerHTML = '';
+      } else {
         container.innerHTML = '<embed src="https://drive.google.com/uc?export=view&id=1q3eTOpKUfilsJx8Z3JBcQ2pHe2YOM4Hv" type="application/pdf" width="100%" height="600px" />';
       }
     });
   </script>
+  
 </body>
 </html>
