@@ -32,7 +32,8 @@
     <section id="skills">
       <h2>證書</h2>
       <!-- 在此處添加您的技能與經歷 -->
-      <embed src="https://drive.google.com/uc?export=view&id=1q3eTOpKUfilsJx8Z3JBcQ2pHe2YOM4Hv" type="application/pdf" width="100%" height="100px" />
+      <div id="certificate-container"></div>
+      <!-- <embed src="https://drive.google.com/uc?export=view&id=1q3eTOpKUfilsJx8Z3JBcQ2pHe2YOM4Hv" type="application/pdf" width="100%" height="100px" /> -->
     </section>
 
     <section id="about">
@@ -49,5 +50,14 @@
   <footer>
     <p>版權所有 &copy; 2023 我的作品集</p>
   </footer>
+
+  <script>
+    document.querySelector("#skills").addEventListener("click", function () {
+      const container = document.querySelector("#certificate-container");
+      if (!container.innerHTML) {
+        container.innerHTML = '<embed src="https://drive.google.com/uc?export=view&id=1q3eTOpKUfilsJx8Z3JBcQ2pHe2YOM4Hv" type="application/pdf" width="100%" height="600px" />';
+      }
+    });
+  </script>
 </body>
 </html>
