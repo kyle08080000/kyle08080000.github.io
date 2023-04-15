@@ -30,7 +30,7 @@
     </section>
 
     <section id="skills">
-      <h2>證書</h2>
+      <h2 id="certificates-title">證書</h2>
       <!-- 在此處添加您的技能與經歷 -->
       <div id="ocp-container" style="display:none;">
         <span id="ocp819">OCP819</span>
@@ -38,15 +38,15 @@
       <div id="certificate-container"></div>
     </section>
 
-    <!-- <section id="about">
-      <h2>關於我</h2> -->
+    <section id="about">
+      <h2>關於我</h2>
       <!-- 在此處添加關於您的信息 -->
-    <!-- </section> -->
+    </section>
 
-    <!-- <section id="contact">
-      <h2>聯繫方式</h2> -->
+    <section id="contact">
+      <h2>聯繫方式</h2>
       <!-- 在此處添加您的聯繫方式 -->
-    <!-- </section> -->
+    </section>
   </main>
 
   <footer>
@@ -54,19 +54,17 @@
   </footer>
 
   <script>
-    const skillsSection = document.querySelector("#skills");
+    const certificatesTitle = document.querySelector("#certificates-title");
     const ocpContainer = document.querySelector("#ocp-container");
     const ocpLink = document.querySelector("#ocp819");
     const certificateContainer = document.querySelector("#certificate-container");
 
-    skillsSection.addEventListener("click", function (event) {
-      if (event.target === skillsSection) {
-        if (ocpContainer.style.display === "none") {
-          ocpContainer.style.display = "block";
-        } else {
-          ocpContainer.style.display = "none";
-          certificateContainer.innerHTML = "";
-        }
+    certificatesTitle.addEventListener("click", function () {
+      if (ocpContainer.style.display === "none") {
+        ocpContainer.style.display = "block";
+      } else {
+        ocpContainer.style.display = "none";
+        certificateContainer.innerHTML = "";
       }
     });
 
