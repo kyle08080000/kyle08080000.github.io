@@ -10,9 +10,11 @@
   <header>
     <nav>
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#skills">Certificate</a></li>
+        <li><a href="#" id="home-link">Home</a></li>
+        <li><a href="#" id="portfolio-link">Portfolio</a></li>
+        <li><a href="#" id="skills-link">Certificate</a></li>
+        <!-- <li><a href="#about">關於我</a></li> -->
+        <!-- <li><a href="#contact">聯繫方式</a></li> -->
       </ul>
     </nav>
   </header>
@@ -77,6 +79,29 @@
         portfolioContent.style.display = "none";
       }
     });
+
+    const homeLink = document.querySelector('#home-link');
+      const portfolioLink = document.querySelector('#portfolio-link');
+      const skillsLink = document.querySelector('#skills-link');
+
+      homeLink.addEventListener('click', function () {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+
+      portfolioLink.addEventListener('click', function () {
+        const portfolioSection = document.querySelector('#portfolio');
+        portfolioSection.scrollIntoView({ behavior: 'smooth' });
+        magicHatGameContent.style.display = 'block';
+      });
+
+      skillsLink.addEventListener('click', function () {
+        const skillsSection = document.querySelector('#skills');
+        skillsSection.scrollIntoView({ behavior: 'smooth' });
+        ocpContainer.style.display = 'block';
+      });
   </script>
 
 </body>
