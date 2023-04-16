@@ -6,7 +6,7 @@
   <title>我的作品集</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body id="main-page">
   <header>
     <nav>
       <ul>
@@ -84,24 +84,39 @@
       const portfolioLink = document.querySelector('#portfolio-link');
       const skillsLink = document.querySelector('#skills-link');
 
+      const mainPage = document.querySelector('#main-page');
+
       homeLink.addEventListener('click', function () {
-        window.scrollTo({
-          top: 0,
-          behavior: 'smooth'
-        });
+        if (mainPage) {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        } else {
+          window.location.href = 'index.html';
+        }
       });
 
       portfolioLink.addEventListener('click', function () {
-        const portfolioSection = document.querySelector('#portfolio');
-        portfolioSection.scrollIntoView({ behavior: 'smooth' });
-        magicHatGameContent.style.display = 'block';
+        if (mainPage) {
+          const portfolioSection = document.querySelector('#portfolio');
+          portfolioSection.scrollIntoView({ behavior: 'smooth' });
+          magicHatGameContent.style.display = 'block';
+        } else {
+          window.location.href = 'index.html#portfolio';
+        }
       });
 
       skillsLink.addEventListener('click', function () {
-        const skillsSection = document.querySelector('#skills');
-        skillsSection.scrollIntoView({ behavior: 'smooth' });
-        ocpContainer.style.display = 'block';
+        if (mainPage) {
+          const skillsSection = document.querySelector('#skills');
+          skillsSection.scrollIntoView({ behavior: 'smooth' });
+          ocpContainer.style.display = 'block';
+        } else {
+          window.location.href = 'index.html#skills';
+        }
       });
+
   </script>
 
 </body>
