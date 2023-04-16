@@ -88,6 +88,18 @@ h2 {
   height: auto;
 }
 
+/* main頂部固定 */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f4f4f4;
+}
+
+main {
+  margin-top: 50px;
+}
 
 
 /* 页脚 */
