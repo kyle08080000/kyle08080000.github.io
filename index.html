@@ -13,25 +13,21 @@
         <li><a href="#home">Home</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#skills">Certificate</a></li>
-        <!-- <li><a href="#about">關於我</a></li> -->
-        <!-- <li><a href="#contact">聯繫方式</a></li> -->
       </ul>
     </nav>
   </header>
 
   <main>
     <section id="home">
-      <!-- <h1>我的作品集</h1> -->
     </section>
 
     <section id="portfolio">
-      <h2>作品集</h2>
-      <!-- 在此處添加您的作品 -->
-      <span id="magic-hat-game-link">Magic Hat Game</span>
-      <div id="magic-hat-game-content" style="display:none;">
+      <span id="portfolio-title">作品集</span>
+      <div id="portfolio-content" style="display:none;">
         <h3>Magic Hat Game</h3>
-        
-      </div> 
+        <!-- 在此處添加您的作品 -->
+        <a href="magic-hat-game.html" target="_self">Magic Hat Game</a>
+      </div>
     </section>
 
     <section id="skills">
@@ -72,17 +68,16 @@
       }
     });
 
-    const magicHatGameLink = document.querySelector("#magic-hat-game-link");
-      const magicHatGameContent = document.querySelector("#magic-hat-game-content");
+    const portfolioTitle = document.querySelector("#portfolio-title");
+    const portfolioContent = document.querySelector("#portfolio-content");
 
-      magicHatGameLink.addEventListener("click", function () {
-        if (magicHatGameContent.style.display === "none") {
-          magicHatGameContent.style.display = "block";
-        } else {
-          magicHatGameContent.style.display = "none";
-        }
-      });
-
+    portfolioTitle.addEventListener("click", function () {
+      if (portfolioContent.style.display === "none") {
+        portfolioContent.style.display = "block";
+      } else {
+        portfolioContent.style.display = "none";
+      }
+    });
   </script>
 
 </body>
