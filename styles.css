@@ -8,7 +8,7 @@
 body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
-  padding-top: 70px; /* 添加这行代码以防止header覆盖内容 */
+  padding-top: 90px; /* 修改這行代碼以防止header覆蓋内容 */
   min-height: 100%;
   display: flex;
   flex-direction: column;
@@ -21,11 +21,11 @@ a {
 
 /* 顶部导航栏 */
 header {
-  background-color: #f4f4f4;
+  background-color: rgba(244, 244, 244, 1); /* 修改這行代碼使header實心 */
   padding: 20px;
-  position: fixed; /* 添加这行代码使header固定在顶部 */
-  width: 100%; /* 添加这行代码使header宽度为100% */
-  z-index: 1000; /* 添加这行代码使header始终在其他元素之上 */
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
 }
 
 nav ul {
