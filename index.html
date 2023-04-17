@@ -18,6 +18,20 @@
   </header>
   <img id="instagram-image" src="IG.png" alt="Your description" />
 
+</head>
+<body id="main-page">
+  <header>
+    <nav>
+      <span class="hamburger">&#9776;</span>
+      <ul class="hamburger-menu">
+        <!-- 漢堡選單內容 -->
+        <li><a href="#" id="hamburger-home-link">Home</a></li>
+        <li><a href="#portfolio" id="hamburger-portfolio-link">Portfolio</a></li>
+        <li><a href="#skills" id="hamburger-skills-link">Certificate</a></li>
+      </ul>
+    </nav>
+  </header>
+
   <main>
     <section id="home">
     </section>
@@ -117,6 +131,13 @@
         }
       });
 
+      // 漢堡選單
+        const hamburger = document.querySelector('.hamburger');
+        const hamburgerMenu = document.querySelector('.hamburger-menu');
+
+        hamburger.addEventListener('click', () => {
+          hamburgerMenu.classList.toggle('show');
+        });
   </script>
 
 </body>
