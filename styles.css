@@ -29,7 +29,7 @@ body {
 /* Instagram 文章風格外框 */
 #instagram-image {
   position: fixed;
-  right: 20px;
+  right: 50px;
   bottom: 20px;
   width: 360px; /* 根据需要调整图片大小 */
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -37,21 +37,6 @@ body {
   animation: move 3s infinite ease-in-out;
 }
 
-
-/* .button-style {
-  display: inline-block;
-  background-color: #2A9D8F;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  text-decoration: none;
-}
-
-.button-style:hover {
-  background-color: #1F7A8C;
-} */
 
 .btn {
   display: inline-block;
@@ -77,73 +62,6 @@ body {
   overflow: hidden;
 }
 
-.circle {
-  position: absolute;
-  border-radius: 50%;
-}
-
-.circle1 {
-  width: 20px;
-  height: 20px;
-  background-color: #264653;
-}
-
-.circle2 {
-  width: 30px;
-  height: 30px;
-  background-color: #2A9D8F;
-}
-
-.circle3 {
-  width: 25px;
-  height: 25px;
-  background-color: #E9C46A;
-}
-
-.circle4 {
-  width: 15px;
-  height: 15px;
-  background-color: #F4A261;
-}
-
-.circle5 {
-  width: 35px;
-  height: 35px;
-  background-color: #E76F51;
-}
-
-/* Lines */
-.line {
-  position: absolute;
-  height: 4px;
-}
-
-.line1 {
-  width: 100px;
-  background-color: #264653;
-}
-
-.line2 {
-  width: 120px;
-  background-color: #2A9D8F;
-}
-
-/* Squares */
-.square {
-  position: absolute;
-}
-
-.square1 {
-  width: 50px;
-  height: 50px;
-  background-color: #E9C46A;
-}
-
-.square2 {
-  width: 40px;
-  height: 40px;
-  background-color: #F4A261;
-}
 
 a {
   text-decoration: none;
