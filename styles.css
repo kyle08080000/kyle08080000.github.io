@@ -12,7 +12,8 @@ body {
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  background-color: #F4F4F4;
+  background-color: #FFE066;
+  /* background-color: #F25F5C; */
   color: #333333;
 }
 
@@ -49,6 +50,15 @@ nav ul li {
 
 nav ul li:last-child {
   margin-right: 0;
+}
+
+/* 链接缩放动画 */
+nav ul li a {
+  transition: transform 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  transform: scale(1.1);
 }
 
 /* 主要内容区 */
