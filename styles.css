@@ -24,7 +24,7 @@
 .hamburger-menu {
   display: none;
   position: absolute;
-  top: 50%;
+  top: 10%;
   left: 0;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.9);
