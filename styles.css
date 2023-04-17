@@ -4,44 +4,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-/* 電腦版樣式 */
-@media screen and (min-width: 768px) {
-  /* 移動 header 至側邊 */
-  header {
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: auto;
-    padding: 0; /* 修改此行 */
-    display: flex;
-    flex-direction: 10%;
-    justify-content: 10%;
-  }
-
-  /* 變更導航條樣式 */
-  nav {
-    height: 100%; /* 新增此行 */
-    padding: 20px; /* 新增此行 */
-  }
-
-  nav ul {
-    flex-direction: column;
-  }
-
-  nav ul li {
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-
-  /* 調整主要內容區域的 padding */
-  main {
-    padding-left: 240px;
-  }
-}
-
-
-
 /* 主要内容区 */
 main {
   padding: 40px;
@@ -94,7 +56,7 @@ body {
 .btn {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #1F7A8C;/* 修改此行以更改按鈕的背景顏色 */
+  background-color: #1F7A8C;
   color: #fff;
   text-align: center;
   text-decoration: none;
@@ -103,7 +65,7 @@ body {
 }
 
 .btn:hover {
-  background-color: #2A9D8F;/* 修改此行以更改按鈕懸停時的背景顏色 */
+  background-color: #2A9D8F;
 }
 
 /* Background elements */
@@ -113,6 +75,74 @@ body {
   height: 100%;
   z-index: -1;
   overflow: hidden;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle1 {
+  width: 20px;
+  height: 20px;
+  background-color: #264653;
+}
+
+.circle2 {
+  width: 30px;
+  height: 30px;
+  background-color: #2A9D8F;
+}
+
+.circle3 {
+  width: 25px;
+  height: 25px;
+  background-color: #E9C46A;
+}
+
+.circle4 {
+  width: 15px;
+  height: 15px;
+  background-color: #F4A261;
+}
+
+.circle5 {
+  width: 35px;
+  height: 35px;
+  background-color: #E76F51;
+}
+
+/* Lines */
+.line {
+  position: absolute;
+  height: 4px;
+}
+
+.line1 {
+  width: 100px;
+  background-color: #264653;
+}
+
+.line2 {
+  width: 120px;
+  background-color: #2A9D8F;
+}
+
+/* Squares */
+.square {
+  position: absolute;
+}
+
+.square1 {
+  width: 50px;
+  height: 50px;
+  background-color: #E9C46A;
+}
+
+.square2 {
+  width: 40px;
+  height: 40px;
+  background-color: #F4A261;
 }
 
 a {
@@ -146,17 +176,13 @@ a:hover {
 
 /* 顶部导航栏 */
 header {
+  background-color: #1F7A8C;
   padding: 20px;
   position: fixed;
   width: 100%;
   z-index: 1000;
   top: 0; /* 保持header在最上方 */
 }
-
-nav {
-  background-color: #1F7A8C; /* 將背景色從 header 移到 nav */
-}
-
 
 nav ul {
   display: flex;
