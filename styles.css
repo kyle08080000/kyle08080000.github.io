@@ -4,6 +4,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+.content-box {
+  background-color: rgba(255, 255, 255, 0.5); /* 設置半透明的白色背景 */
+  padding: 20px; /* 設置內邊距 */
+  border-radius: 5px; /* 如果需要，可以添加邊框圓角 */
+  width: 15%; /* 設置寬度為 80% */
+}
 /* 漢堡選單樣式 */
 .hamburger {
   display: block;
@@ -18,7 +24,7 @@
 .hamburger-menu {
   display: none;
   position: absolute;
-  top: 100%;
+  top: 50%;
   left: 0;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.9);
@@ -190,13 +196,6 @@ h2 {
   height: auto;
 }
 
-.content-box {
-  background-color: rgba(255, 255, 255, 0.5); /* 設置半透明的白色背景 */
-  padding: 20px; /* 設置內邊距 */
-  border-radius: 5px; /* 如果需要，可以添加邊框圓角 */
-  width: 15%; /* 設置寬度為 80% */
-  
-}
 
 
 /* Images container */
