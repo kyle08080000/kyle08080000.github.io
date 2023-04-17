@@ -12,17 +12,22 @@ body {
   min-height: 100%;
   display: flex;
   flex-direction: column;
+  background-color: #F4F4F4;
+  color: #333333;
 }
-
 
 a {
   text-decoration: none;
-  color: #333;
+  color: #F25F5C;
+}
+
+a:hover {
+  color: #70C1B3;
 }
 
 /* 顶部导航栏 */
 header {
-  background-color: rgba(244, 244, 244, 1); /* 修改这行代码使header实心 */
+  background-color: #1F7A8C;
   padding: 20px;
   position: fixed;
   width: 100%;
@@ -66,6 +71,7 @@ h2 {
   max-width: 100%;
   height: auto;
 }
+
 /* Images container */
 .images-container {
   display: flex;
@@ -80,7 +86,7 @@ h2 {
 }
 
 .image-single img {
-  width:e 100%;
+  width: 100%;
 }
 
 .image-pair {
