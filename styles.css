@@ -13,7 +13,7 @@
     top: 0;
     left: 0;
     height: 100%;
-    width: auto; /* 修改此行 */
+    width: 100px; /* 修改此行 */
     padding: 20px;
     display: flex;
     flex-direction: column;
