@@ -18,7 +18,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #FFCF56;
-  background-image: url('Crocodile.jpg');
+  background-image: url('landscape.jpeg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
