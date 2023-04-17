@@ -19,7 +19,7 @@ body {
   flex-direction: column;
   background-color: #FFCF56;
   background-image: url('landscape.jpeg');
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   color: #333333;
