@@ -55,7 +55,7 @@ body {
   bottom: calc(10% + 10px);
   left: 20%;
   width: 20px;
-  height: 100px;
+  height: 0;
   background-color: #70C1B3;
 }
 
@@ -73,7 +73,7 @@ body {
 
 .tree2 {
   left: 50%;
-  height: 80px;
+  height: 0;
   bottom: calc(10% + 10px);  
 }
 
@@ -83,6 +83,44 @@ body {
   border-bottom: 50px solid #ffffff;
 }
 
+.tree:before,
+.tree2:before,
+.tree:after,
+.tree2:after,
+.tree:nth-child(3),
+.tree2:nth-child(3) {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.tree:before,
+.tree2:before {
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 30px solid #1F7A8C;
+  left: -10px;
+  top: -30px;
+}
+
+.tree:after,
+.tree2:after {
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 45px solid #1F7A8C;
+  left: -20px;
+  top: -60px;
+}
+
+.tree:nth-child(3),
+.tree2:nth-child(3) {
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 60px solid #1F7A8C;
+  left: -30px;
+  top: -90px;
+}
 
 a {
   text-decoration: none;
