@@ -264,10 +264,15 @@ h2 {
 /* 页脚 */
 footer {
   margin-top: auto;
-  background-color: #70C1B3;;
+  background-color: #70C1B3;
   padding: 20px;
   text-align: center;
+  height: 100px; /* 添加此行以設置高度 */
+  display: flex; /* 添加此行以使用 Flexbox 佈局 */
+  align-items: center; /* 添加此行以垂直居中內部元素 */
+  justify-content: center; /* 添加此行以水平居中內部元素 */
 }
+
 
 html {
   height: 100%;
