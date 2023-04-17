@@ -7,7 +7,7 @@
 /* 主要内容区 */
 main {
   padding: 40px;
-  min-height: calc(100% - 80px - 40px - 50px - 20px); /* 减去顶部内边距，上下padding，margin-bottom和页脚高度 */
+  flex: 1; /* 添加此行 */
 }
 
 body {
@@ -20,7 +20,9 @@ body {
   /* background-color: #FFE066; */
   /* background-color: #F25F5C; */
   color: #333333;
+  position: relative; /* 添加此行 */
 }
+
 
 /* Background elements */
 #background-elements {
@@ -185,7 +187,10 @@ footer {
   background-color: #70C1B3;;
   padding: 20px;
   text-align: center;
+  position: relative; /* 添加此行 */
+  z-index: 10; /* 添加此行 */
 }
+
 html {
   height: 100%;
 }
