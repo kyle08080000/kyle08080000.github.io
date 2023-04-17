@@ -234,8 +234,8 @@ h2 {
   background-color: rgba(255, 255, 255, 0.5); /* 設置半透明的白色背景 */
   padding: 20px; /* 設置內邊距 */
   border-radius: 5px; /* 如果需要，可以添加邊框圓角 */
-  width: 80%; /* 設置寬度為 80% */
-  margin: 0 auto; /* 居中對齊 */
+  width: 20px; /* 設置寬度為 80% */
+  
 }
 
 
