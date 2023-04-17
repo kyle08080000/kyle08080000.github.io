@@ -18,11 +18,14 @@ body {
 
 a {
   text-decoration: none;
-  color: #F25F5C;
+  /* color: #F25F5C; */
+  color: #F4F4F4;
 }
 
 a:hover {
-  color: #70C1B3;
+  color: #F25F5C;
+  /* 淺綠色 */
+  /* color: #70C1B3; */
 }
 
 /* 顶部导航栏 */
