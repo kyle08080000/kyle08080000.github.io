@@ -34,83 +34,46 @@
       <h2 id="certificates-title">證書</h2>
       <!-- 在此處添加您的技能與經歷 -->
       <div id="ocp-container">
-        <span id="ocp819" class="btn">OCP819</span>
+        <a href="https://drive.google.com/uc?export=view&id=1q3eTOpKUfilsJx8Z3JBcQ2pHe2YOM4Hv" target="_blank" class="btn">OCP819</a>
       </div>
-      <div id="certificate-container"></div>
     </section>
   </main>
   
- <script>
-    const certificatesTitle = document.querySelector("#certificates-title");
-    const ocpContainer = document.querySelector("#ocp-container");
-    const ocpLink = document.querySelector("#ocp819");
-    const certificateContainer = document.querySelector("#certificate-container");
-
-    certificatesTitle.addEventListener("click", function () {
-      if (ocpContainer.style.display === "none") {
-        ocpContainer.style.display = "block";
-      } else {
-        ocpContainer.style.display = "none";
-        certificateContainer.innerHTML = "";
-      }
-    });
-
-    ocpLink.addEventListener("click", function (event) {
-      event.stopPropagation();
-      if (certificateContainer.innerHTML) {
-        certificateContainer.innerHTML = "";
-      } else {
-        certificateContainer.innerHTML = '<embed src="https://drive.google.com/uc?export=view&id=1q3eTOpKUfilsJx8Z3JBcQ2pHe2YOM4Hv" type="application/pdf" width="100%" height="600px" />';
-      }
-    });
-
-    const portfolioTitle = document.querySelector("#portfolio-title");
-    const portfolioContent = document.querySelector("#portfolio-content");
-
-    portfolioTitle.addEventListener("click", function () {
-      if (portfolioContent.style.display === "none") {
-        portfolioContent.style.display = "block";
-      } else {
-        portfolioContent.style.display = "none";
-      }
-    });
-
+  <script>
     const homeLink = document.querySelector('#home-link');
-      const portfolioLink = document.querySelector('#portfolio-link');
-      const skillsLink = document.querySelector('#skills-link');
+    const portfolioLink = document.querySelector('#portfolio-link');
+    const skillsLink = document.querySelector('#skills-link');
 
-      const mainPage = document.querySelector('#main-page');
+    const mainPage = document.querySelector('#main-page');
 
-      homeLink.addEventListener('click', function () {
-        if (mainPage) {
-          window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-          });
-        } else {
-          window.location.href = 'index.html';
-        }
-      });
+    homeLink.addEventListener('click', function () {
+      if (mainPage) {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      } else {
+        window.location.href = 'index.html';
+      }
+    });
 
-      portfolioLink.addEventListener('click', function () {
-        if (mainPage) {
-          const portfolioSection = document.querySelector('#portfolio');
-          portfolioSection.scrollIntoView({ behavior: 'smooth' });
-          portfolioContent.style.display = 'block';
-        } else {
-          window.location.href = 'index.html#portfolio';
-        }
-      });
+    portfolioLink.addEventListener('click', function () {
+      if (mainPage) {
+        const portfolioSection = document.querySelector('#portfolio');
+        portfolioSection.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        window.location.href = 'index.html#portfolio';
+      }
+    });
 
-      skillsLink.addEventListener('click', function () {
-        if (mainPage) {
-          const skillsSection = document.querySelector('#skills');
-          skillsSection.scrollIntoView({ behavior: 'smooth' });
-          ocpContainer.style.display = 'block';
-        } else {
-          window.location.href = 'index.html#skills';
-        }
-      });
+    skillsLink.addEventListener('click', function () {
+      if (mainPage) {
+        const skillsSection = document.querySelector('#skills');
+        skillsSection.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        window.location.href = 'index.html#skills';
+      }
+    });
 
   </script>
 
