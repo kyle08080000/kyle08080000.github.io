@@ -15,8 +15,8 @@
     width: auto;
     padding: 0; /* 修改此行 */
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: 10%;
+    justify-content: 10%;
   }
 
   /* 變更導航條樣式 */
