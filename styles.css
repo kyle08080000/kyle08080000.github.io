@@ -34,10 +34,37 @@ body {
 
 .circle {
   position: absolute;
+  border-radius: 50%;
+}
+
+.circle1 {
   width: 20px;
   height: 20px;
-  border-radius: 50%;
-  background-color: #FF7043; /* 圓點顏色 */
+  background-color: #264653;
+}
+
+.circle2 {
+  width: 30px;
+  height: 30px;
+  background-color: #2A9D8F;
+}
+
+.circle3 {
+  width: 25px;
+  height: 25px;
+  background-color: #E9C46A;
+}
+
+.circle4 {
+  width: 15px;
+  height: 15px;
+  background-color: #F4A261;
+}
+
+.circle5 {
+  width: 35px;
+  height: 35px;
+  background-color: #E76F51;
 }
 
 a {
