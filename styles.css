@@ -91,7 +91,14 @@ nav {
     display: none;
   }
 }
-/* * */
+/* 主要内容区 */
+.home {
+  background-image: url('landscape.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* 可以根據需要調整高度 */
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -189,9 +196,6 @@ nav ul li a:hover {
 #instagram-image {
   animation: move 2s infinite;
 }
-
-/* 主要内容区 */
-
 
 /* 页脚 */
 footer {
