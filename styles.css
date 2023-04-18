@@ -79,10 +79,10 @@
   position: relative;
 }
 
-.menu > li:hover .portfolioSubmenu,
+/* .menu > li:hover .portfolioSubmenu,
 .menu > li:hover .skillsSubmenu {
   display: block;
-}
+} */
 
 
 /* 漢堡子菜單樣式 */
@@ -110,9 +110,9 @@
   display: none;
 }
 
-.submenu-hidden {
+/* .submenu-hidden {
   display: none !important;
-}
+} */
 
 
 /* 主要内容区 */
