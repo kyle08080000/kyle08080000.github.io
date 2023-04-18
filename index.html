@@ -66,7 +66,7 @@
     });
 
     const hamburgerHomeLink = document.querySelector('#hamburger-home-link');
-    const hamburgerPortfolioLink = document.querySelector('#hamburger-portfolio-link');
+    // const hamburgerPortfolioLink = document.querySelector('#hamburger-portfolio-link');
     // const hamburgerSkillsLink = document.querySelector('#hamburger-skills-link');
 
     hamburgerHomeLink.addEventListener('click', () => {
@@ -131,9 +131,10 @@
           hamburgerSubmenuContainer.style.display = hamburgerSubmenuContainer.style.display === 'none' ? 'block' : 'none';
         });
 
+        const hamburgerPortfolioLink = document.querySelector('#hamburger-portfolio-link');
         const hamburgerSkillsLink = document.querySelector('#hamburger-skills-link');
+        const hamburgerSubmenuContainerPortfolio = document.querySelector('#hamburger-portfolio-link + .hamburger-submenu-container');
         const hamburgerSubmenuContainerSkills = document.querySelector('#hamburger-skills-link + .hamburger-submenu-container');
-
         hamburgerSkillsLink.addEventListener('click', (e) => {
           e.preventDefault();
           hamburgerSubmenuContainerSkills.style.display = hamburgerSubmenuContainerSkills.style.display === 'none' ? 'block' : 'none';
