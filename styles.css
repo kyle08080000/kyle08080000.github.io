@@ -48,7 +48,8 @@
   }
 }
 /* 下拉菜單樣式 */
-.submenu {
+.portfolioSubmenu,
+.skillsSubmenu {
   display: none;
   position: absolute;
   background-color: #1F7A8C;
@@ -78,9 +79,11 @@
   position: relative;
 }
 
-.menu > li:hover .submenu {
-  display: none;
+.menu > li:hover .portfolioSubmenu,
+.menu > li:hover .skillsSubmenu {
+  display: block;
 }
+
 
 /* 漢堡子菜單樣式 */
 .hamburger-submenu-container {
@@ -255,8 +258,6 @@ h2 {
   max-width: 100%;
   height: auto;
 }
-
-
 
 /* Images container */
 .images-container {
