@@ -7,15 +7,42 @@
   <link rel="stylesheet" href="hat-game.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#">首頁</a></li>
-        <li><a href="#">維修案例</a></li>
-        <li><a href="#">聯絡我們</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <nav>
+          <ul class="menu">
+            <li><a href="#" id="home-link">首頁</a></li>
+            <li>
+              <a href="#portfolio" id="portfolio-link">作品集</a>
+              <ul class="portfolioSubmenu submenu-hidden">
+                <li><a href="magic-hat-game.html">魔術帽遊戲</a></li>
+                <!-- <li><a href="#">Submenu 2</a></li> -->
+              </ul>
+            </li>
+            <li>
+              <a href="#skills" id="skills-link">證書</a>
+              <ul class="skillsSubmenu submenu-hidden">
+                <li><a href="#">OCPJP</a></li>
+                <!-- <li><a href="#">Submenu 2</a></li> -->
+              </ul>
+            </li>
+          </ul>
+          <span class="hamburger">&#9776;</span>
+        </nav>
+        <!-- 漢堡選單 -->
+        <div class="hamburger-menu">
+          <a href="#" id="hamburger-home-link">首頁</a>
+          <a href="#portfolio" id="hamburger-portfolio-link">作品集</a>
+          <div class="hamburger-portfolio-submenu-container submenu-hidden">
+            <a href="magic-hat-game.html">魔術帽遊戲</a>
+            <!-- <a href="#">Submenu 2</a> -->
+          </div>
+          <a href="#skills" id="hamburger-skills-link">證書</a>
+          <div class="hamburger-skills-submenu-container submenu-hidden">
+            <a href="#">OCPJP</a>
+            <!-- <a href="#">Submenu 2</a> -->
+          </div>
+        </div>
+      </header>
   <main>
     <section class="hero">
       <h1>維修案例</h1>
@@ -42,5 +69,79 @@
   <footer>
     <p>版權所有 &copy; 2023 維修案例公司</p>
   </footer>
+  <script>
+    // 漢堡選單點擊事件
+    const hamburger = document.querySelector('.hamburger');
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+  
+    hamburger.addEventListener('click', () => {
+      hamburgerMenu.classList.toggle('show');
+    });
+  
+    const hamburgerHomeLink = document.querySelector('#hamburger-home-link');
+    const hamburgerPortfolioLink = document.querySelector('#hamburger-portfolio-link');
+    const hamburgerSkillsLink = document.querySelector('#hamburger-skills-link');
+  
+    hamburgerHomeLink.addEventListener('click', () => {
+      hamburgerMenu.classList.remove('show');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  
+    hamburgerPortfolioLink.addEventListener('click', () => {
+      hamburgerMenu.classList.remove('show');
+      const portfolioSection = document.querySelector('#portfolio');
+      portfolioSection.scrollIntoView({ behavior: 'smooth' });
+    });
+  
+    hamburgerSkillsLink.addEventListener('click', () => {
+      hamburgerMenu.classList.remove('show');
+      const skillsSection = document.querySelector('#skills');
+      skillsSection.scrollIntoView({ behavior: 'smooth' });
+    });
+  
+    /// 下拉菜單功能
+    function toggleMenu(selector) {
+    const menu = document.querySelector(selector);
+    if (menu.style.display === "block") {
+      menu.style.display = "none";
+    } else {
+      menu.style.display = "block";
+    }
+  }
+  
+    document.querySelector("#portfolio-link").addEventListener("click", function (event) {
+    event.preventDefault();
+    event.stopPropagation();
+    toggleMenu(".portfolioSubmenu");
+  });
+  
+  document.querySelector("#skills-link").addEventListener("click", function (event) {
+    event.preventDefault();
+    event.stopPropagation();
+    toggleMenu(".skillsSubmenu");
+  });
+  
+    // 漢堡子菜單功能
+    document.querySelector("#hamburger-portfolio-link").addEventListener("click", function (event) {
+    event.preventDefault();
+    event.stopPropagation();
+    toggleMenu(".hamburger-portfolio-submenu-container");
+  });
+  
+  document.querySelector("#hamburger-skills-link").addEventListener("click", function (event) {
+    event.preventDefault();
+    event.stopPropagation();
+    toggleMenu(".hamburger-skills-submenu-container");
+  });
+  
+    // 點擊其他地方收回子菜單
+    document.addEventListener('click', (e) => {
+      portfolioSubmenu.classList.add('submenu-hidden');
+      skillsSubmenu.classList.add('submenu-hidden');
+      hamburgerPortfolioSubmenuContainer.classList.add('submenu-hidden');
+      hamburgerSkillsSubmenuContainer.classList.add('submenu-hidden');
+    });
+  
+  </script>
 </body>
 </html>
