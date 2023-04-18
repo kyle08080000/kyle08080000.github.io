@@ -88,7 +88,11 @@ nav {
     display: none;
   }
   .home {
-    height: 200vh; 
+    height: 100vh; 
+  }
+  #instagram-image {
+    max-height: calc(100vh - 200px); /* 增加 max-height 限制 */
+    object-fit: cover; /* 使圖像保持比例 */
   }
 }
 /* 主要内容区 */
