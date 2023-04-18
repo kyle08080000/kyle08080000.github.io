@@ -201,7 +201,7 @@ header {
   top: 0; /* 保持header在最上方 */
 }
 /* 在選單連結之間添加間距 */
-nav .menu > li {
+nav .menu > a {
   margin-right: 20px;
 }
 
