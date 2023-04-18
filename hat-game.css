@@ -183,14 +183,11 @@ footer {
     .menu {
       display: none;
     }
-    /* .hero h1 {
-      padding-top: 200px; 
-    } */
     .case-centered {
       display: block;
       position: absolute;
       left: 50%;
-      top: 10%;
+      top: 5%;
       transform: translate(-50%, -50%);
       font-size: 10px;
       z-index: 2;
