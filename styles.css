@@ -79,6 +79,10 @@ nav {
   font-size: 1.5rem;
 }
 
+.image-mobile {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .hamburger {
     display: block;
