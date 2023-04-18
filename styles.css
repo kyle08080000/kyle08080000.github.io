@@ -173,7 +173,6 @@ nav ul li a:hover {
 .case p {
   font-size: 14px;
 }
-/* 主要内容区 */
 
 /* 添加動畫效果 */
 @keyframes move {
@@ -192,59 +191,7 @@ nav ul li a:hover {
 }
 
 /* 主要内容区 */
-main {
-  padding: 40px;
-}
 
-section {
-  margin-bottom: 50px;
-}
-
-.custom-margin {
-  margin-bottom: 50px;
-}
-
-h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-}
-
-/*跳转页面*/
-.portfolio-image {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Images container */
-.images-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-
-.image-single,
-.image-pair {
-  margin-bottom: 20px;
-}
-
-.image-single img {
-  width: 100%;
-}
-
-.image-pair {
-  display: flex;
-  justify-content: space-between;
-}
-
-.image-pair img {
-  width: 48%;
-}
-
-.image1 {
-  width: 200px;
-  height: auto;
-}
 
 /* 页脚 */
 footer {
