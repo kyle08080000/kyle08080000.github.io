@@ -13,14 +13,14 @@
         <li><a href="#" id="home-link">首頁</a></li>
         <li>
           <a href="#portfolio" id="portfolio-link">作品集</a>
-          <ul class="submenu">
+          <ul class="portfolioSubmenu">
             <li><a href="#">魔術帽子遊戲</a></li>
             <li><a href="#">Submenu 2</a></li>
           </ul>
         </li>
         <li>
           <a href="#skills" id="skills-link">證書</a>
-          <ul class="submenu">
+          <ul class="skillsSubmenu">
             <li><a href="#">OCPJP</a></li>
             <li><a href="#">Submenu 2</a></li>
           </ul>
@@ -32,12 +32,12 @@
     <div class="hamburger-menu">
       <a href="#" id="hamburger-home-link">首頁</a>
       <a href="#portfolio" id="hamburger-portfolio-link">作品集</a>
-      <div class="hamburger-submenu-container">
+      <div class="hamburger-portfolio-submenu-container">
         <a href="#">魔術帽子遊戲</a>
         <a href="#">Submenu 2</a>
       </div>
       <a href="#skills" id="hamburger-skills-link">證書</a>
-      <div class="hamburger-submenu-container">
+      <div class="hamburger-skills-submenu-container">
         <a href="#">OCPJP</a>
         <a href="#">Submenu 2</a>
       </div>
@@ -57,93 +57,67 @@
   </footer>
 
   <script>
-    // 漢堡選單點擊事件
-    const hamburger = document.querySelector('.hamburger');
-    const hamburgerMenu = document.querySelector('.hamburger-menu');
+  // 漢堡選單點擊事件
+  const hamburger = document.querySelector('.hamburger');
+  const hamburgerMenu = document.querySelector('.hamburger-menu');
 
-    hamburger.addEventListener('click', () => {
-      hamburgerMenu.classList.toggle('show');
-    });
+  hamburger.addEventListener('click', () => {
+    hamburgerMenu.classList.toggle('show');
+  });
 
-    const hamburgerHomeLink = document.querySelector('#hamburger-home-link');
-    // const hamburgerPortfolioLink = document.querySelector('#hamburger-portfolio-link');
-    // const hamburgerSkillsLink = document.querySelector('#hamburger-skills-link');
+  const hamburgerHomeLink = document.querySelector('#hamburger-home-link');
+  const hamburgerPortfolioLink = document.querySelector('#hamburger-portfolio-link');
+  const hamburgerSkillsLink = document.querySelector('#hamburger-skills-link');
 
-    hamburgerHomeLink.addEventListener('click', () => {
-      hamburgerMenu.classList.remove('show');
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
+  hamburgerHomeLink.addEventListener('click', () => {
+    hamburgerMenu.classList.remove('show');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
 
-    hamburgerPortfolioLink.addEventListener('click', () => {
-      hamburgerMenu.classList.remove('show');
-      const portfolioSection = document.querySelector('#portfolio');
-      portfolioSection.scrollIntoView({ behavior: 'smooth' });
-      portfolioContent.style.display = 'block';
-    });
+  hamburgerPortfolioLink.addEventListener('click', () => {
+    hamburgerMenu.classList.remove('show');
+    const portfolioSection = document.querySelector('#portfolio');
+    portfolioSection.scrollIntoView({ behavior: 'smooth' });
+  });
 
-    hamburgerSkillsLink.addEventListener('click', () => {
-      hamburgerMenu.classList.remove('show');
-      const skillsSection = document.querySelector('#skills');
-      skillsSection.scrollIntoView({ behavior: 'smooth' });
-      ocpContainer.style.display = 'block';
-    });
-    // 下拉菜單功能
-      const portfolioLink = document.querySelector('#portfolio-link');
-      const submenu = document.querySelector('.submenu');
+  hamburgerSkillsLink.addEventListener('click', () => {
+    hamburgerMenu.classList.remove('show');
+    const skillsSection = document.querySelector('#skills');
+    skillsSection.scrollIntoView({ behavior: 'smooth' });
+  });
 
-      portfolioLink.addEventListener('mouseover', () => {
-        submenu.style.display = 'block';
-      });
+  // 下拉菜單功能
+  const portfolioLink = document.querySelector('#portfolio-link');
+  const portfolioSubmenu = document.querySelector('.portfolioSubmenu');
 
-      portfolioLink.addEventListener('mouseout', () => {
-        submenu.style.display = 'none';
-      });
+  portfolioLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    portfolioSubmenu.style.display = portfolioSubmenu.style.display === 'block' ? 'none' : 'block';
+  });
 
-      submenu.addEventListener('mouseover', () => {
-        submenu.style.display = 'block';
-      });
+  const skillsLink = document.querySelector('#skills-link');
+  const skillsSubmenu = document.querySelector('.skillsSubmenu');
 
-      submenu.addEventListener('mouseout', () => {
-        submenu.style.display = 'none';
-      });
-      // 點擊時才出現下子拉菜單
-        portfolioLink.addEventListener('click', (e) => {
-          e.preventDefault();
-          submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
-        });
+  skillsLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    skillsSubmenu.style.display = skillsSubmenu.style.display === 'block' ? 'none' : 'block';
+  });
 
-        const skillsLink = document.querySelector('#skills-link');
-        const submenuSkills = document.querySelector('#skills-link + .submenu');
+  // 漢堡子菜單功能
+  const hamburgerPortfolioSubmenuContainer = document.querySelector('.hamburger-portfolio-submenu-container');
+  const hamburgerSkillsSubmenuContainer = document.querySelector('.hamburger-skills-submenu-container');
 
-        skillsLink.addEventListener('click', (e) => {
-          e.preventDefault();
-          submenuSkills.style.display = submenuSkills.style.display === 'block' ? 'none' : 'block';
-        });
-      // 漢堡子菜單功能
-      const hamburgerSubmenuContainer = document.querySelector('.hamburger-submenu-container');
+  hamburgerPortfolioLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    hamburgerPortfolioSubmenuContainer.style.display = hamburgerPortfolioSubmenuContainer.style.display === 'none' ? 'block' : 'none';
+  });
 
-      hamburgerPortfolioLink.addEventListener('click', () => {
-        hamburgerSubmenuContainer.style.display = hamburgerSubmenuContainer.style.display === 'none' ? 'block' : 'none';
-      });
-      // 點擊時才出現漢堡子菜單
-        hamburgerPortfolioLink.addEventListener('click', (e) => {
-          e.preventDefault();
-          hamburgerSubmenuContainer.style.display = hamburgerSubmenuContainer.style.display === 'none' ? 'block' : 'none';
-        });
-        hamburgerSkillsLink.addEventListener('click', (e) => {
-          e.preventDefault();
-          hamburgerSubmenuContainer.style.display = hamburgerSubmenuContainer.style.display === 'none' ? 'block' : 'none';
-        });
+  hamburgerSkillsLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    hamburgerSkillsSubmenuContainer.style.display = hamburgerSkillsSubmenuContainer.style.display === 'none' ? 'block' : 'none';
+  });
 
-        const hamburgerPortfolioLink = document.querySelector('#hamburger-portfolio-link');
-        const hamburgerSkillsLink = document.querySelector('#hamburger-skills-link');
-        const hamburgerSubmenuContainerPortfolio = document.querySelector('#hamburger-portfolio-link + .hamburger-submenu-container');
-        const hamburgerSubmenuContainerSkills = document.querySelector('#hamburger-skills-link + .hamburger-submenu-container');
-        hamburgerSkillsLink.addEventListener('click', (e) => {
-          e.preventDefault();
-          hamburgerSubmenuContainerSkills.style.display = hamburgerSubmenuContainerSkills.style.display === 'none' ? 'block' : 'none';
-        });
-  </script>
+</script>
 
 </body>
 </html>
