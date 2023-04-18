@@ -87,10 +87,14 @@ nav {
   .menu {
     display: none;
   }
-  .home {
-    background-image: url('long.jpg');
-    background-size: 150%;
-    background-position: center center;
+  /* 在小屏幕上隐藏 image-desktop 类的图片 */
+  .image-desktop {
+    display: none;
+  }
+
+  /* 在小屏幕上显示 image-mobile 类的图片 */
+  .image-mobile {
+    display: block;
   }
   
 }
