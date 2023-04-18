@@ -210,6 +210,14 @@ footer {
   .case-desktop {
     display: none;
   }
+  .case-centered{
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
 }
 .cases .case-centered {
   display: block;
