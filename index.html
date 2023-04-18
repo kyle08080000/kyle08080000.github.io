@@ -88,30 +88,30 @@
   });
 
   /// 下拉菜單功能
-  portfolioLink.addEventListener('click', (e) => {
-    e.preventDefault();
-    e.stopPropagation();
-    portfolioSubmenu.classList.toggle('submenu-hidden');
-  });
+  document.querySelector("#portfolio-link").addEventListener("click", function (event) {
+  event.preventDefault();
+  event.stopPropagation();
+  toggleMenu(".portfolioSubmenu");
+});
 
-  skillsLink.addEventListener('click', (e) => {
-    e.preventDefault();
-    e.stopPropagation();
-    skillsSubmenu.classList.toggle('submenu-hidden');
-  });
+document.querySelector("#skills-link").addEventListener("click", function (event) {
+  event.preventDefault();
+  event.stopPropagation();
+  toggleMenu(".skillsSubmenu");
+});
 
   // 漢堡子菜單功能
-  hamburgerPortfolioLink.addEventListener('click', (e) => {
-    e.preventDefault();
-    e.stopPropagation();
-    hamburgerPortfolioSubmenuContainer.classList.toggle('submenu-hidden');
-  });
+  document.querySelector("#hamburger-portfolio-link").addEventListener("click", function (event) {
+  event.preventDefault();
+  event.stopPropagation();
+  toggleMenu(".hamburger-portfolio-submenu-container");
+});
 
-  hamburgerSkillsLink.addEventListener('click', (e) => {
-    e.preventDefault();
-    e.stopPropagation();
-    hamburgerSkillsSubmenuContainer.classList.toggle('submenu-hidden');
-  });
+document.querySelector("#hamburger-skills-link").addEventListener("click", function (event) {
+  event.preventDefault();
+  event.stopPropagation();
+  toggleMenu(".hamburger-skills-submenu-container");
+});
 
   // 點擊其他地方收回子菜單
   document.addEventListener('click', (e) => {
