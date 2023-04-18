@@ -176,7 +176,7 @@ nav ul li a:hover {
 /* 主要内容区 */
 
 /* 添加動畫效果 */
-/* @keyframes move {
+@keyframes move {
   0% {
     transform: translateY(0);
   }
@@ -186,7 +186,10 @@ nav ul li a:hover {
   100% {
     transform: translateY(0);
   }
-} */
+}
+#instagram-image {
+  animation: move 2s infinite;
+}
 
 /* 主要内容区 */
 main {
