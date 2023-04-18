@@ -40,11 +40,11 @@
   color: #ccc;
 }
 
-/* @media (max-width: 768px) {
+@media (max-width: 769px) {
   .hamburger {
     display: block;
   }
-} */
+}
 
 /* 主要内容区 */
 main {
