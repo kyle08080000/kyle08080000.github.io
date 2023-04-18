@@ -204,6 +204,3 @@ footer {
   align-items: center; /* 添加此行以垂直居中內部元素 */
   justify-content: center; /* 添加此行以水平居中內部元素 */
 }
-html {
-  height: 100%;
-}
