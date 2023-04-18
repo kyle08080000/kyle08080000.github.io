@@ -70,16 +70,18 @@ nav {
   align-items: center;
   gap: 1.5rem;
   transition: left 0.3s;
+  z-index: 100;/* 始終在最上層 */
 }
 
 .hamburger-menu.show {
-  left: 0;
+  right: 0;
 }
 
 .hamburger-menu a {
   color: #fff;
   text-decoration: none;
   font-size: 1.5rem;
+  z-index: 100;
 }
 
 @media (max-width: 768px) {
