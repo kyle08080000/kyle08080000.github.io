@@ -68,19 +68,7 @@ nav {
   font-size: 1.5rem;
 }
 
-@media (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
 
-  .menu {
-    display: none;
-  }
-  .hero h1 {
-    padding-top: 200px; 
-  }
-  
-}
 /* * */
 * {
   margin: 0;
@@ -177,4 +165,17 @@ footer {
   }
   html {
     height: 100%;
+  }
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block;
+    }
+  
+    .menu {
+      display: none;
+    }
+    .hero h1 {
+      padding-top: 200px; 
+    }
+    
   }
