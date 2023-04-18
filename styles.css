@@ -7,50 +7,45 @@
 
 /* 漢堡選單樣式 */
 .hamburger {
-  display: block;
   cursor: pointer;
   font-size: 30px;
-  position: absolute;
-  top: 60px;
-  left: 20px;
-  z-index: 1000;
+  display: none;
 }
 
 .hamburger-menu {
-  display: none;
-  position: absolute;
-  top: 100%;
+  position: fixed;
+  top: 0;
   left: 0;
+  height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
-  z-index: 900;
-  padding-top: 10px;
-  transition: max-height 0.3s;
-  max-height: 0;
-  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
-.hamburger-menu ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
+.hamburger-menu.show {
+  display: flex;
 }
 
-.hamburger-menu ul li {
-  margin-bottom: 20px;
-}
-
-.hamburger-menu ul li a {
-  color: white;
+.hamburger-menu a {
+  color: #fff;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 30px;
 }
 
-.show {
-  display: block;
-  max-height: 300px; /* 調整此值以適應更多選項 */
+.hamburger-menu a:hover {
+  color: #ccc;
 }
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+}
+
 /* 主要内容区 */
 main {
   padding: 40px;

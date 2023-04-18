@@ -22,6 +22,12 @@
   <main>
     <section id="home">
     </section>
+    <!-- 漢堡選單 -->
+    <div class="hamburger-menu">
+      <a href="#" id="hamburger-home-link">Home</a>
+      <a href="#portfolio" id="hamburger-portfolio-link">作品集</a>
+      <a href="#skills" id="hamburger-skills-link">證書</a>
+    </div>
 
   </main>
   
@@ -101,39 +107,37 @@
         }
       });
 
-    // 漢堡選單
-    const hamburger = document.querySelector('.hamburger');
-    const hamburgerMenu = document.createElement('ul');
-    hamburgerMenu.className = 'hamburger-menu';
+    // 漢堡選單點擊事件
+      const hamburger = document.querySelector('.hamburger');
+      const hamburgerMenu = document.querySelector('.hamburger-menu');
 
-    // 創建漢堡選單的內容
-    const portfolioItem = document.createElement('li');
-    portfolioItem.innerHTML = '<a href="#portfolio" id="hamburger-portfolio-link">作品集</a>';
-    const certificateItem = document.createElement('li');
-    certificateItem.innerHTML = '<a href="#skills" id="hamburger-skills-link">證書</a>';
+      hamburger.addEventListener('click', () => {
+        hamburgerMenu.classList.toggle('show');
+      });
 
-    hamburgerMenu.appendChild(portfolioItem);
-    hamburgerMenu.appendChild(certificateItem);
+      const hamburgerHomeLink = document.querySelector('#hamburger-home-link');
+      const hamburgerPortfolioLink = document.querySelector('#hamburger-portfolio-link');
+      const hamburgerSkillsLink = document.querySelector('#hamburger-skills-link');
 
-    // 將漢堡選單添加到nav
-    const nav = document.querySelector('nav');
-    nav.appendChild(hamburgerMenu);
+      hamburgerHomeLink.addEventListener('click', () => {
+        hamburgerMenu.classList.remove('show');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
 
-    hamburger.addEventListener('click', () => {
-      hamburgerMenu.classList.toggle('show');
-    });
+      hamburgerPortfolioLink.addEventListener('click', () => {
+        hamburgerMenu.classList.remove('show');
+        const portfolioSection = document.querySelector('#portfolio');
+        portfolioSection.scrollIntoView({ behavior: 'smooth' });
+        portfolioContent.style.display = 'block';
+      });
 
-    // 添加漢堡選單的點擊事件
-    const hamburgerPortfolioLink = document.querySelector('#hamburger-portfolio-link');
-    const hamburgerSkillsLink = document.querySelector('#hamburger-skills-link');
+      hamburgerSkillsLink.addEventListener('click', () => {
+        hamburgerMenu.classList.remove('show');
+        const skillsSection = document.querySelector('#skills');
+        skillsSection.scrollIntoView({ behavior: 'smooth' });
+        ocpContainer.style.display = 'block';
+      });
 
-    hamburgerPortfolioLink.addEventListener('click', () => {
-      hamburgerMenu.classList.remove('show');
-    });
-
-    hamburgerSkillsLink.addEventListener('click', () => {
-      hamburgerMenu.classList.remove('show');
-    });
   </script>
 
 </body>
