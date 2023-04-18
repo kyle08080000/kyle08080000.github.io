@@ -4,12 +4,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 body {
   font-family: Arial, sans-serif;
@@ -34,7 +28,6 @@ nav {
   width: 50px; /* 調整為所需的寬度 */
   height: 50px; /* 保持高度與寬度成比例 */
 }
-
 
 .menu {
   display: flex;
@@ -101,21 +94,6 @@ nav {
   background-size: cover;
   background-position: center;
   height: 100vh;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Arial', sans-serif;
-}
-
-header {
-  background-color: #1F7A8C;
-  padding: 15px;
 }
 
 nav ul {
