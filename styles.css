@@ -4,20 +4,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* 媒體查詢 */
-@media screen and (min-width: 768px) {
-  /* 顯示預設選單 */
-  nav ul {
-    display: flex;
-    justify-content: space-around;
-  }
+
 /* 漢堡選單樣式 */
 .hamburger {
   cursor: pointer;
   font-size: 30px;
-  /* display: none; */
-  display: block;
-  margin-left: 10px; /* 為漢堡圖標添加左邊距 */
+  display: none;
 }
 
 .hamburger-menu {
@@ -47,7 +39,7 @@
 .hamburger-menu a:hover {
   color: #ccc;
 }
-}
+
 /* @media (max-width: 768px) {
   .hamburger {
     display: block;
