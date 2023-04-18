@@ -67,7 +67,7 @@
 
     const hamburgerHomeLink = document.querySelector('#hamburger-home-link');
     const hamburgerPortfolioLink = document.querySelector('#hamburger-portfolio-link');
-    const hamburgerSkillsLink = document.querySelector('#hamburger-skills-link');
+    // const hamburgerSkillsLink = document.querySelector('#hamburger-skills-link');
 
     hamburgerHomeLink.addEventListener('click', () => {
       hamburgerMenu.classList.remove('show');
@@ -131,7 +131,7 @@
           hamburgerSubmenuContainer.style.display = hamburgerSubmenuContainer.style.display === 'none' ? 'block' : 'none';
         });
 
-        // const hamburgerSkillsLink = document.querySelector('#hamburger-skills-link');
+        const hamburgerSkillsLink = document.querySelector('#hamburger-skills-link');
         const hamburgerSubmenuContainerSkills = document.querySelector('#hamburger-skills-link + .hamburger-submenu-container');
 
         hamburgerSkillsLink.addEventListener('click', (e) => {
