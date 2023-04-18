@@ -88,6 +88,15 @@
   });
 
   /// 下拉菜單功能
+  function toggleMenu(selector) {
+  const menu = document.querySelector(selector);
+  if (menu.style.display === "block") {
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "block";
+  }
+}
+
   document.querySelector("#portfolio-link").addEventListener("click", function (event) {
   event.preventDefault();
   event.stopPropagation();
