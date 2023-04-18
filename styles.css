@@ -100,9 +100,13 @@
   margin-bottom: 0;
 }
 
-.submenu, .hamburger-submenu-container {
+.portfolioSubmenu,
+.skillsSubmenu,
+.hamburger-portfolio-submenu-container,
+.hamburger-skills-submenu-container {
   display: none;
 }
+
 
 
 /* 主要内容区 */
@@ -111,7 +115,7 @@ main {
   flex: 1; /* 添加此行 */
 }
 
-body {
+body {  
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
   padding-top: 80px; /* 将顶部内边距增加到80px，以防止header遮挡内容 */
