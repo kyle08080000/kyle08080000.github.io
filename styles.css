@@ -47,6 +47,54 @@
     display: none;
   }
 }
+/* 下拉菜單樣式 */
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: #1F7A8C;
+  list-style-type: none;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.submenu li {
+  margin-bottom: 8px;
+}
+
+.submenu li:last-child {
+  margin-bottom: 0;
+}
+
+.submenu a {
+  color: #fff;
+}
+
+.submenu a:hover {
+  color: #ccc;
+}
+
+.menu > li {
+  position: relative;
+}
+
+/* 漢堡子菜單樣式 */
+.hamburger-submenu-container {
+  display: none;
+}
+
+.hamburger-menu.show .hamburger-submenu-container {
+  display: block;
+}
+
+.hamburger-submenu-container a {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.hamburger-submenu-container a:last-child {
+  margin-bottom: 0;
+}
 
 /* 主要内容区 */
 main {
