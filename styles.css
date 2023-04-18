@@ -91,7 +91,8 @@ nav {
     height: 100vh; 
   }
   #instagram-image {
-    max-height: calc(100vh - 200px); /* 增加 max-height 限制 */
+    height: calc(100vh - 250px); /* 增加高度限制 */
+    width: auto; /* 重置寬度 */
     object-fit: cover; /* 使圖像保持比例 */
   }
 }
