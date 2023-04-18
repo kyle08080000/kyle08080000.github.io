@@ -78,6 +78,10 @@
   position: relative;
 }
 
+.menu > li:hover .submenu {
+  display: none;
+}
+
 /* 漢堡子菜單樣式 */
 .hamburger-submenu-container {
   display: none;
