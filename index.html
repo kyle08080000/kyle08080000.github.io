@@ -98,6 +98,17 @@
       e.stopPropagation();
       skillsSubmenu.style.display = skillsSubmenu.style.display === 'block' ? 'none' : 'block';
     });
+  
+  // 導航欄子菜單
+    portfolioLink.addEventListener('click', (e) => {
+      e.preventDefault();
+      portfolioSubmenu.style.display = portfolioSubmenu.style.display === 'block' ? 'none' : 'block';
+    });
+
+    skillsLink.addEventListener('click', (e) => {
+      e.preventDefault();
+      skillsSubmenu.style.display = skillsSubmenu.style.display === 'block' ? 'none' : 'block';
+    });
 
     // 漢堡子菜單功能
     hamburgerPortfolioLink.addEventListener('click', (e) => {
