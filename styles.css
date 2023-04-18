@@ -194,7 +194,6 @@ footer {
   .hamburger {
     display: block;
   }
-
   .menu {
     display: none;
   }
@@ -202,7 +201,6 @@ footer {
   .image-desktop {
     display: none;
   }
-
   /* 在小屏幕上显示 image-mobile 类的图片 */
   .image-mobile {
     display: block;
@@ -211,6 +209,14 @@ footer {
   .case-desktop {
     display: none;
   }
+  /* .case-centered {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  } */
 }
 .case-centered {
   display: none;
@@ -220,8 +226,8 @@ footer {
   transform: translate(-50%, -50%);
   z-index: 2;
 }
-@media (min-width: 769px) {
+/* @media (min-width: 769px) {
   .case-centered {
     display: block;
   }
-}
+} */
