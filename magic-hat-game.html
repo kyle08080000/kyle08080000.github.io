@@ -7,17 +7,42 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-          <ul>
-            <li><a href="#" id="home-link">Home</a></li>
-            <li><a href="#" id="portfolio-link">Portfolio</a></li>
-            <li><a href="#" id="skills-link">Certificate</a></li>
-            <!-- <li><a href="#about">關於我</a></li> -->
-            <!-- <li><a href="#contact">聯繫方式</a></li> -->
+  <header>
+    <nav>
+      <ul class="menu">
+        <li><a href="#" id="home-link">首頁</a></li>
+        <li>
+          <a href="#portfolio" id="portfolio-link">作品集</a>
+          <ul class="portfolioSubmenu submenu-hidden">
+            <li><a href="magic-hat-game.html">魔術帽遊戲</a></li>
+            <!-- <li><a href="#">Submenu 2</a></li> -->
           </ul>
-        </nav>
-      </header>
+        </li>
+        <li>
+          <a href="#skills" id="skills-link">證書</a>
+          <ul class="skillsSubmenu submenu-hidden">
+            <li><a href="#">OCPJP</a></li>
+            <!-- <li><a href="#">Submenu 2</a></li> -->
+          </ul>
+        </li>
+      </ul>
+      <span class="hamburger">&#9776;</span>
+    </nav>
+    <!-- 漢堡選單 -->
+    <div class="hamburger-menu">
+      <a href="#" id="hamburger-home-link">首頁</a>
+      <a href="#portfolio" id="hamburger-portfolio-link">作品集</a>
+      <div class="hamburger-portfolio-submenu-container submenu-hidden">
+        <a href="magic-hat-game.html">魔術帽遊戲</a>
+        <!-- <a href="#">Submenu 2</a> -->
+      </div>
+      <a href="#skills" id="hamburger-skills-link">證書</a>
+      <div class="hamburger-skills-submenu-container submenu-hidden">
+        <a href="#">OCPJP</a>
+        <!-- <a href="#">Submenu 2</a> -->
+      </div>
+    </div>
+  </header>
       
   <h3>Magic Hat Game 影片</h3>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/AkBm7yC9oZY" 
@@ -27,7 +52,7 @@
 <section id="portfolio">
     <div class="images-container">
       <div class="image-single">
-        <img src="image1.png" alt="遊戲介紹" class="image1">
+        <img iframe width="560" height="315" src="image1.png" alt="遊戲介紹" class="image1">
         <p>遊戲介紹</p>
       </div>
       <div class="image-pair">
