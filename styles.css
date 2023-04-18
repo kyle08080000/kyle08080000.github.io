@@ -74,7 +74,7 @@ nav {
 }
 
 .hamburger-menu.show {
-  left: 0;
+  right: 0;
 }
 
 .hamburger-menu a {
