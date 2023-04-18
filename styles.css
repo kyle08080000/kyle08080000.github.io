@@ -211,6 +211,7 @@ header {
   width: 100%;
   z-index: 1000;
   top: 0; /* 保持header在最上方 */
+  margin-right: 20px;
 }
 
 nav ul {
