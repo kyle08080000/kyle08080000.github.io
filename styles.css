@@ -91,9 +91,7 @@ nav {
     height: 100vh; 
   }
   #instagram-image {
-    height: calc(100vh - 250px); /* 增加高度限制 */
-    width: auto; /* 重置寬度 */
-    object-fit: cover; /* 使圖像保持比例 */
+    animation: none;
   }
 }
 /* 主要内容区 */
