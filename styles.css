@@ -4,48 +4,36 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-/* 漢堡選單樣式 */
+/* 媒體查詢 */
+@media screen and (min-width: 768px) {
+  /* 顯示預設選單 */
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+/* 顯示漢堡圖標 */
 .hamburger {
-  cursor: pointer;
-  font-size: 30px;
-  display: none;
+  display: block;
+  margin-left: 10px; /* 為漢堡圖標添加左邊距 */
 }
 
+/* 顯示漢堡選單 */
 .hamburger-menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-.hamburger-menu.show {
   display: flex;
+  justify-content: space-around;
+  position: static;
+  background-color: transparent;
 }
 
 .hamburger-menu a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 30px;
+  color: black;
+  padding: 0;
 }
 
 .hamburger-menu a:hover {
-  color: #ccc;
+  background-color: transparent;
 }
-
-/* @media (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
-} */
-
+}
 /* 主要内容区 */
 main {
   padding: 40px;
