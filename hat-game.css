@@ -183,9 +183,9 @@ footer {
     .menu {
       display: none;
     }
-    .hero h1 {
+    /* .hero h1 {
       padding-top: 200px; 
-    }
+    } */
     .case-centered {
       display: block;
       position: absolute;
