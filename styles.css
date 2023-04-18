@@ -90,11 +90,6 @@ nav {
   .home {
     height: 100vh; 
   }
-  #instagram-image {
-    height: calc(100vh - 250px); /* 增加高度限制 */
-    width: auto; /* 重置寬度 */
-    object-fit: cover; /* 使圖像保持比例 */
-  }
 }
 /* 主要内容区 */
 .home {
@@ -128,8 +123,7 @@ nav ul li a:hover {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  /* padding: 50px 0; */
-  padding-top: 30%; /* 调整此值以适应不同的设备 */
+  padding: 50px 0;
   text-align: center;
   width: 100%;
   height: calc(100vw * 9 / 16); /* 16:9 aspect ratio */
