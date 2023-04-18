@@ -88,56 +88,41 @@
 
   // 下拉菜單功能
   portfolioLink.addEventListener('click', (e) => {
-  e.preventDefault();
-  e.stopPropagation();
-  const displayValue = portfolioSubmenu.style.display === 'block' ? 'none' : 'block';
-  portfolioSubmenu.style.setProperty('display', displayValue, 'important');
-});
+    e.preventDefault();
+    e.stopPropagation();
+    const displayValue = portfolioSubmenu.style.display === 'block' ? 'none' : 'block';
+    portfolioSubmenu.style.setProperty('display', displayValue, 'important');
+  });
 
-skillsLink.addEventListener('click', (e) => {
-  e.preventDefault();
-  e.stopPropagation();
-  const displayValue = skillsSubmenu.style.display === 'block' ? 'none' : 'block';
-  skillsSubmenu.style.setProperty('display', displayValue, 'important');
-});
-  
-  // 導航欄子菜單
-  portfolioLink.addEventListener('click', (e) => {
-  e.preventDefault();
-  e.stopPropagation();
-  const displayValue = portfolioSubmenu.style.display === 'block' ? 'none' : 'block';
-  portfolioSubmenu.style.setProperty('display', displayValue, 'important');
-});
+  skillsLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    const displayValue = skillsSubmenu.style.display === 'block' ? 'none' : 'block';
+    skillsSubmenu.style.setProperty('display', displayValue, 'important');
+  });
 
-skillsLink.addEventListener('click', (e) => {
-  e.preventDefault();
-  e.stopPropagation();
-  const displayValue = skillsSubmenu.style.display === 'block' ? 'none' : 'block';
-  skillsSubmenu.style.setProperty('display', displayValue, 'important');
-});
+  // 漢堡子菜單功能
+  hamburgerPortfolioLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    const displayValue = hamburgerPortfolioSubmenuContainer.style.display === 'none' ? 'block' : 'none';
+    hamburgerPortfolioSubmenuContainer.style.setProperty('display', displayValue, 'important');
+  });
 
-    // 漢堡子菜單功能
-    hamburgerPortfolioLink.addEventListener('click', (e) => {
-  e.preventDefault();
-  e.stopPropagation();
-  const displayValue = hamburgerPortfolioSubmenuContainer.style.display === 'none' ? 'block' : 'none';
-  hamburgerPortfolioSubmenuContainer.style.setProperty('display', displayValue, 'important');
-});
+  hamburgerSkillsLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    const displayValue = hamburgerSkillsSubmenuContainer.style.display === 'none' ? 'block' : 'none';
+    hamburgerSkillsSubmenuContainer.style.setProperty('display', displayValue, 'important');
+  });
 
-hamburgerSkillsLink.addEventListener('click', (e) => {
-  e.preventDefault();
-  e.stopPropagation();
-  const displayValue = hamburgerSkillsSubmenuContainer.style.display === 'none' ? 'block' : 'none';
-  hamburgerSkillsSubmenuContainer.style.setProperty('display', displayValue, 'important');
-});
-
-    // 點擊其他地方收回子菜單
-    document.addEventListener('click', (e) => {
-      portfolioSubmenu.style.display = 'none';
-      skillsSubmenu.style.display = 'none';
-      hamburgerPortfolioSubmenuContainer.style.display = 'none';
-      hamburgerSkillsSubmenuContainer.style.display = 'none';
-    });
+  // 點擊其他地方收回子菜單
+  document.addEventListener('click', (e) => {
+    portfolioSubmenu.style.display = 'none';
+    skillsSubmenu.style.display = 'none';
+    hamburgerPortfolioSubmenuContainer.style.display = 'none';
+    hamburgerSkillsSubmenuContainer.style.display = 'none';
+  });
 
 </script>
 
