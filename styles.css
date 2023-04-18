@@ -87,7 +87,15 @@ nav {
   .menu {
     display: none;
   }
-  
+  /* 在小屏幕上隐藏 image-desktop 类的图片 */
+  .image-desktop {
+    display: none;
+  }
+
+  /* 在小屏幕上显示 image-mobile 类的图片 */
+  .image-mobile {
+    display: block;
+  }
   /* 在小屏幕上隐藏具有 case-desktop 类的 div */
   .case-desktop {
     display: none;
