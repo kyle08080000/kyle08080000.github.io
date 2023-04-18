@@ -87,51 +87,39 @@
   });
 
   // 下拉菜單功能
-  const portfolioLink = document.querySelector('#portfolio-link');
-  const portfolioSubmenu = document.querySelector('.portfolioSubmenu');
-
-  portfolioLink.addEventListener('click', (e) => {
-    e.preventDefault();
-    portfolioSubmenu.style.display = portfolioSubmenu.style.display === 'block' ? 'none' : 'block';
-  });
-
-  const skillsLink = document.querySelector('#skills-link');
-  const skillsSubmenu = document.querySelector('.skillsSubmenu');
-
-  skillsLink.addEventListener('click', (e) => {
-    e.preventDefault();
-    skillsSubmenu.style.display = skillsSubmenu.style.display === 'block' ? 'none' : 'block';
-  });
-
-  // 漢堡子菜單功能
-  const hamburgerPortfolioSubmenuContainer = document.querySelector('.hamburger-portfolio-submenu-container');
-  const hamburgerSkillsSubmenuContainer = document.querySelector('.hamburger-skills-submenu-container');
-
-  hamburgerPortfolioLink.addEventListener('click', (e) => {
-    e.preventDefault();
-    hamburgerPortfolioSubmenuContainer.style.display = hamburgerPortfolioSubmenuContainer.style.display === 'none' ? 'block' : 'none';
-  });
-
-  hamburgerSkillsLink.addEventListener('click', (e) => {
-    e.preventDefault();
-    hamburgerSkillsSubmenuContainer.style.display = hamburgerSkillsSubmenuContainer.style.display === 'none' ? 'block' : 'none';
-  });
-
-  // 點擊其他地方收回子菜單
-    document.addEventListener('click', (e) => {
-      if (!portfolioLink.contains(e.target)) {
-        portfolioSubmenu.style.display = 'none';
-      }
-      if (!skillsLink.contains(e.target)) {
-        skillsSubmenu.style.display = 'none';
-      }
-      if (!hamburgerPortfolioLink.contains(e.target)) {
-        hamburgerPortfolioSubmenuContainer.style.display = 'none';
-      }
-      if (!hamburgerSkillsLink.contains(e.target)) {
-        hamburgerSkillsSubmenuContainer.style.display = 'none';
-      }
+    portfolioLink.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      portfolioSubmenu.style.display = portfolioSubmenu.style.display === 'block' ? 'none' : 'block';
     });
+
+    skillsLink.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      skillsSubmenu.style.display = skillsSubmenu.style.display === 'block' ? 'none' : 'block';
+    });
+
+    // 漢堡子菜單功能
+    hamburgerPortfolioLink.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      hamburgerPortfolioSubmenuContainer.style.display = hamburgerPortfolioSubmenuContainer.style.display === 'none' ? 'block' : 'none';
+    });
+
+    hamburgerSkillsLink.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      hamburgerSkillsSubmenuContainer.style.display = hamburgerSkillsSubmenuContainer.style.display === 'none' ? 'block' : 'none';
+    });
+
+    // 點擊其他地方收回子菜單
+    document.addEventListener('click', (e) => {
+      portfolioSubmenu.style.display = 'none';
+      skillsSubmenu.style.display = 'none';
+      hamburgerPortfolioSubmenuContainer.style.display = 'none';
+      hamburgerSkillsSubmenuContainer.style.display = 'none';
+    });
+
 </script>
 
 </body>
