@@ -91,7 +91,87 @@ nav {
     display: none;
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+header {
+  background-color: #1F7A8C;
+  padding: 15px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #ccc;
+}
+
+.hero {
+  background-image: url('Portfolio.jpg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px 0;
+  text-align: center;
+  width: 100%;
+  height: calc(100vw * 9 / 16); /* 16:9 aspect ratio */
+}
+
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  padding-top: 700px;
+}
+
+.cases {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.case {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.case img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.case h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.case p {
+  font-size: 14px;
+}
 /* 主要内容区 */
 main {
   padding: 40px;
