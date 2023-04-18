@@ -17,6 +17,7 @@ body {
 
 header {
   background-color: #1F7A8C;
+  height: 10px; /* 更改高度為自動 */
 }
 
 nav {
