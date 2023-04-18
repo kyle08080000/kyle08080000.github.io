@@ -100,28 +100,34 @@
     });
   
   // 導航欄子菜單
-    portfolioLink.addEventListener('click', (e) => {
-      e.preventDefault();
-      portfolioSubmenu.style.display = portfolioSubmenu.style.display === 'block' ? 'none' : 'block';
-    });
+  portfolioLink.addEventListener('click', (e) => {
+  e.preventDefault();
+  e.stopPropagation();
+  const displayValue = portfolioSubmenu.style.display === 'block' ? 'none' : 'block';
+  portfolioSubmenu.style.setProperty('display', displayValue, 'important');
+});
 
-    skillsLink.addEventListener('click', (e) => {
-      e.preventDefault();
-      skillsSubmenu.style.display = skillsSubmenu.style.display === 'block' ? 'none' : 'block';
-    });
+skillsLink.addEventListener('click', (e) => {
+  e.preventDefault();
+  e.stopPropagation();
+  const displayValue = skillsSubmenu.style.display === 'block' ? 'none' : 'block';
+  skillsSubmenu.style.setProperty('display', displayValue, 'important');
+});
 
     // 漢堡子菜單功能
     hamburgerPortfolioLink.addEventListener('click', (e) => {
-      e.preventDefault();
-      e.stopPropagation();
-      hamburgerPortfolioSubmenuContainer.style.display = hamburgerPortfolioSubmenuContainer.style.display === 'none' ? 'block' : 'none';
-    });
+  e.preventDefault();
+  e.stopPropagation();
+  const displayValue = hamburgerPortfolioSubmenuContainer.style.display === 'none' ? 'block' : 'none';
+  hamburgerPortfolioSubmenuContainer.style.setProperty('display', displayValue, 'important');
+});
 
-    hamburgerSkillsLink.addEventListener('click', (e) => {
-      e.preventDefault();
-      e.stopPropagation();
-      hamburgerSkillsSubmenuContainer.style.display = hamburgerSkillsSubmenuContainer.style.display === 'none' ? 'block' : 'none';
-    });
+hamburgerSkillsLink.addEventListener('click', (e) => {
+  e.preventDefault();
+  e.stopPropagation();
+  const displayValue = hamburgerSkillsSubmenuContainer.style.display === 'none' ? 'block' : 'none';
+  hamburgerSkillsSubmenuContainer.style.setProperty('display', displayValue, 'important');
+});
 
     // 點擊其他地方收回子菜單
     document.addEventListener('click', (e) => {
