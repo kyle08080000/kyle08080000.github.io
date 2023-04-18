@@ -96,7 +96,9 @@ nav {
   .image-mobile {
     display: block;
   }
-  
+  .cases {
+    display: block;
+  }
 }
 /* 主要内容区 */
 .home {
