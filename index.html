@@ -13,14 +13,14 @@
         <li><a href="#" id="home-link">首頁</a></li>
         <li>
           <a href="#portfolio" id="portfolio-link">作品集</a>
-          <ul class="portfolioSubmenu">
+          <ul class="portfolioSubmenu submenu-hidden">
             <li><a href="#">魔術帽子遊戲</a></li>
             <li><a href="#">Submenu 2</a></li>
           </ul>
         </li>
         <li>
           <a href="#skills" id="skills-link">證書</a>
-          <ul class="skillsSubmenu">
+          <ul class="skillsSubmenu submenu-hidden">
             <li><a href="#">OCPJP</a></li>
             <li><a href="#">Submenu 2</a></li>
           </ul>
@@ -32,17 +32,18 @@
     <div class="hamburger-menu">
       <a href="#" id="hamburger-home-link">首頁</a>
       <a href="#portfolio" id="hamburger-portfolio-link">作品集</a>
-      <div class="hamburger-portfolio-submenu-container">
+      <div class="hamburger-portfolio-submenu-container submenu-hidden">
         <a href="#">魔術帽子遊戲</a>
         <a href="#">Submenu 2</a>
       </div>
       <a href="#skills" id="hamburger-skills-link">證書</a>
-      <div class="hamburger-skills-submenu-container">
+      <div class="hamburger-skills-submenu-container submenu-hidden">
         <a href="#">OCPJP</a>
         <a href="#">Submenu 2</a>
       </div>
     </div>
   </header>
+
   <img id="instagram-image" src="IG.png" alt="Your description" />
 
   <main>
@@ -86,42 +87,38 @@
     skillsSection.scrollIntoView({ behavior: 'smooth' });
   });
 
-  // 下拉菜單功能
+  /// 下拉菜單功能
   portfolioLink.addEventListener('click', (e) => {
     e.preventDefault();
     e.stopPropagation();
-    const displayValue = portfolioSubmenu.style.display === 'block' ? 'none' : 'block';
-    portfolioSubmenu.style.setProperty('display', displayValue, 'important');
+    portfolioSubmenu.classList.toggle('submenu-hidden');
   });
 
   skillsLink.addEventListener('click', (e) => {
     e.preventDefault();
     e.stopPropagation();
-    const displayValue = skillsSubmenu.style.display === 'block' ? 'none' : 'block';
-    skillsSubmenu.style.setProperty('display', displayValue, 'important');
+    skillsSubmenu.classList.toggle('submenu-hidden');
   });
 
   // 漢堡子菜單功能
   hamburgerPortfolioLink.addEventListener('click', (e) => {
     e.preventDefault();
     e.stopPropagation();
-    const displayValue = hamburgerPortfolioSubmenuContainer.style.display === 'none' ? 'block' : 'none';
-    hamburgerPortfolioSubmenuContainer.style.setProperty('display', displayValue, 'important');
+    hamburgerPortfolioSubmenuContainer.classList.toggle('submenu-hidden');
   });
 
   hamburgerSkillsLink.addEventListener('click', (e) => {
     e.preventDefault();
     e.stopPropagation();
-    const displayValue = hamburgerSkillsSubmenuContainer.style.display === 'none' ? 'block' : 'none';
-    hamburgerSkillsSubmenuContainer.style.setProperty('display', displayValue, 'important');
+    hamburgerSkillsSubmenuContainer.classList.toggle('submenu-hidden');
   });
 
   // 點擊其他地方收回子菜單
   document.addEventListener('click', (e) => {
-    portfolioSubmenu.style.display = 'none';
-    skillsSubmenu.style.display = 'none';
-    hamburgerPortfolioSubmenuContainer.style.display = 'none';
-    hamburgerSkillsSubmenuContainer.style.display = 'none';
+    portfolioSubmenu.classList.add('submenu-hidden');
+    skillsSubmenu.classList.add('submenu-hidden');
+    hamburgerPortfolioSubmenuContainer.classList.add('submenu-hidden');
+    hamburgerSkillsSubmenuContainer.classList.add('submenu-hidden');
   });
 
 </script>

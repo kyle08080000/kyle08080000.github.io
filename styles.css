@@ -107,6 +107,9 @@
   display: none;
 }
 
+.submenu-hidden {
+  display: none !important;
+}
 
 
 /* 主要内容区 */
