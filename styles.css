@@ -188,7 +188,13 @@ nav ul li a:hover {
     transform: translateY(0);
   }
 }
-#instagram-image {
+#instagram-image1 {
+  animation: move 2s infinite;
+}
+#instagram-image2 {
+  animation: move 2s infinite;
+}
+#instagram-image3 {
   animation: move 2s infinite;
 }
 
