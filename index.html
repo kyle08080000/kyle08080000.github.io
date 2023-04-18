@@ -117,6 +117,21 @@
     hamburgerSkillsSubmenuContainer.style.display = hamburgerSkillsSubmenuContainer.style.display === 'none' ? 'block' : 'none';
   });
 
+  // 點擊其他地方收回子菜單
+    document.addEventListener('click', (e) => {
+      if (!portfolioLink.contains(e.target)) {
+        portfolioSubmenu.style.display = 'none';
+      }
+      if (!skillsLink.contains(e.target)) {
+        skillsSubmenu.style.display = 'none';
+      }
+      if (!hamburgerPortfolioLink.contains(e.target)) {
+        hamburgerPortfolioSubmenuContainer.style.display = 'none';
+      }
+      if (!hamburgerSkillsLink.contains(e.target)) {
+        hamburgerSkillsSubmenuContainer.style.display = 'none';
+      }
+    });
 </script>
 
 </body>
