@@ -1,17 +1,5 @@
 /* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-body {
-  font-family: Arial, sans-serif;
-}
-
-header {
-  background-color: #1F7A8C;
-}
 
 nav {
   display: flex;
@@ -87,19 +75,18 @@ nav {
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Arial', sans-serif;
-  }
-  
-  header {
-    background-color: #1F7A8C;
-    padding: 15px;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #1F7A8C;
+}
   
   nav ul {
     display: flex;
