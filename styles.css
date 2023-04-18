@@ -70,6 +70,7 @@ nav {
   align-items: center;
   gap: 1.5rem;
   transition: left 0.3s;
+  z-index: 100;
 }
 
 .hamburger-menu.show {
