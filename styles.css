@@ -200,6 +200,15 @@ header {
   z-index: 1000;
   top: 0; /* 保持header在最上方 */
 }
+/* 在選單連結之間添加間距 */
+nav .menu > li {
+  margin-right: 20px;
+}
+
+/* 最後一個連結不需要右邊的間距 */
+nav .menu > li:last-child {
+  margin-right: 0;
+}
 
 nav ul {
   display: flex;
