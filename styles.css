@@ -30,6 +30,11 @@ nav {
   font-size: 1.5rem;
   color: #fff;
 }
+.logo img {
+  width: 150px; /* 調整為所需的寬度 */
+  height: auto; /* 保持高度與寬度成比例 */
+}
+
 
 .menu {
   display: flex;
