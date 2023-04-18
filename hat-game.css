@@ -1,3 +1,103 @@
+* 漢堡選單樣式 */
+.hamburger {
+  cursor: pointer;
+  font-size: 30px;
+  display: none;
+}
+
+.hamburger-menu {
+  position: fixed;
+  top: 10%;
+  left: 0;
+  height: 60%;
+  width: 70%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.hamburger-menu.show {
+  display: flex;
+}
+
+.hamburger-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.hamburger-menu a:hover {
+  color: #ccc;
+}
+
+@media (max-width: 769px) {
+  .hamburger {
+    display: block;
+  }
+  nav ul.menu {
+    display: none;
+  }
+}
+/* 下拉菜單樣式 */
+.portfolioSubmenu,
+.skillsSubmenu {
+  display: none;
+  position: absolute;
+  background-color: #1F7A8C;
+  list-style-type: none;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.submenu li {
+  margin-bottom: 8px;
+}
+
+.submenu li:last-child {
+  margin-bottom: 0;
+}
+
+.submenu a {
+  color: #fff;
+}
+
+.submenu a:hover {
+  color: #ccc;
+}
+
+.menu > li {
+  position: relative;
+}
+
+/* 漢堡子菜單樣式 */
+.hamburger-submenu-container {
+  display: none;
+}
+
+.hamburger-menu.show .hamburger-submenu-container {
+  display: block;
+}
+
+.hamburger-submenu-container a {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.hamburger-submenu-container a:last-child {
+  margin-bottom: 0;
+}
+
+.portfolioSubmenu,
+.skillsSubmenu,
+.hamburger-portfolio-submenu-container,
+.hamburger-skills-submenu-container {
+  display: none;
+}
+
 * {
     margin: 0;
     padding: 0;
