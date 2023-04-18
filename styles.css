@@ -39,7 +39,7 @@
   color: #ccc;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 769px) {
   .hamburger {
     display: block;
   }
