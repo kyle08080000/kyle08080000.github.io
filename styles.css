@@ -202,7 +202,7 @@ header {
 }
 /* 在選單連結之間添加間距 */
 nav .menu > li {
-  margin-right: 40px; /* 調整間距大小 */
+  margin-right: 60px; /* 調整間距大小 */
 }
 
 /* 最後一個連結不需要右邊的間距 */
