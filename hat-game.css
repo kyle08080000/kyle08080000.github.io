@@ -134,14 +134,15 @@
   
   .hero {
     background-image: url('Portfolio.jpg');
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: #ddd;
     padding: 50px 0;
-    width: 100%;
     text-align: center;
+    width: 100%;
+    height: calc(100vw * 9 / 16); /* 16:9 aspect ratio */
   }
+  
   
   .hero h1 {
     font-size: 48px;
