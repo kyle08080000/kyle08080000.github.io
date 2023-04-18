@@ -205,7 +205,7 @@ footer {
   /* 在小屏幕上显示 image-mobile 类的图片 */
   .image-mobile {
     display: block;
-    border: 20%;
+    margin-top: 20%;
   }
   /* 在小屏幕上隐藏具有 case-desktop 类的 div */
   .case-desktop {
