@@ -38,7 +38,78 @@
   </footer>
 
   <script>
-  
+  // 漢堡選單點擊事件
+  const hamburger = document.querySelector('.hamburger');
+  const hamburgerMenu = document.querySelector('.hamburger-menu');
+
+  hamburger.addEventListener('click', () => {
+    hamburgerMenu.classList.toggle('show');
+  });
+
+  const hamburgerHomeLink = document.querySelector('#hamburger-home-link');
+  const hamburgerPortfolioLink = document.querySelector('#hamburger-portfolio-link');
+  const hamburgerSkillsLink = document.querySelector('#hamburger-skills-link');
+
+  hamburgerHomeLink.addEventListener('click', () => {
+    hamburgerMenu.classList.remove('show');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  hamburgerPortfolioLink.addEventListener('click', () => {
+    hamburgerMenu.classList.remove('show');
+    const portfolioSection = document.querySelector('#portfolio');
+    portfolioSection.scrollIntoView({ behavior: 'smooth' });
+  });
+
+  hamburgerSkillsLink.addEventListener('click', () => {
+    hamburgerMenu.classList.remove('show');
+    const skillsSection = document.querySelector('#skills');
+    skillsSection.scrollIntoView({ behavior: 'smooth' });
+  });
+
+  /// 下拉菜單功能
+  function toggleMenu(selector) {
+  const menu = document.querySelector(selector);
+  if (menu.style.display === "block") {
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "block";
+  }
+}
+
+  document.querySelector("#portfolio-link").addEventListener("click", function (event) {
+  event.preventDefault();
+  event.stopPropagation();
+  toggleMenu(".portfolioSubmenu");
+});
+
+document.querySelector("#skills-link").addEventListener("click", function (event) {
+  event.preventDefault();
+  event.stopPropagation();
+  toggleMenu(".skillsSubmenu");
+});
+
+  // 漢堡子菜單功能
+  document.querySelector("#hamburger-portfolio-link").addEventListener("click", function (event) {
+  event.preventDefault();
+  event.stopPropagation();
+  toggleMenu(".hamburger-portfolio-submenu-container");
+});
+
+document.querySelector("#hamburger-skills-link").addEventListener("click", function (event) {
+  event.preventDefault();
+  event.stopPropagation();
+  toggleMenu(".hamburger-skills-submenu-container");
+});
+
+  // 點擊其他地方收回子菜單
+  document.addEventListener('click', (e) => {
+    portfolioSubmenu.classList.add('submenu-hidden');
+    skillsSubmenu.classList.add('submenu-hidden');
+    hamburgerPortfolioSubmenuContainer.classList.add('submenu-hidden');
+    hamburgerSkillsSubmenuContainer.classList.add('submenu-hidden');
+  });
+
 </script>
 
 </body>
