@@ -79,12 +79,6 @@
   position: relative;
 }
 
-/* .menu > li:hover .portfolioSubmenu,
-.menu > li:hover .skillsSubmenu {
-  display: block;
-} */
-
-
 /* 漢堡子菜單樣式 */
 .hamburger-submenu-container {
   display: none;
@@ -109,12 +103,6 @@
 .hamburger-skills-submenu-container {
   display: none;
 }
-
-/* .submenu-hidden {
-  display: none !important;
-} */
-
-
 /* 主要内容区 */
 main {
   padding: 40px;
@@ -211,7 +199,7 @@ header {
   width: 100%;
   z-index: 1000;
   top: 0; /* 保持header在最上方 */
-  margin-right: 20%;
+  right: 20%;
 }
 
 nav ul {
