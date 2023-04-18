@@ -199,7 +199,6 @@ header {
   width: 100%;
   z-index: 1000;
   top: 0; /* 保持header在最上方 */
-  right: 20%;
 }
 
 nav ul {
