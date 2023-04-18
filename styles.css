@@ -44,6 +44,9 @@
   .hamburger {
     display: block;
   }
+  nav ul {
+    display: none;
+  }
 }
 
 /* 主要内容区 */
