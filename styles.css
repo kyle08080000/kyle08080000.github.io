@@ -4,7 +4,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 /* 漢堡選單樣式 */
 .hamburger {
   cursor: pointer;
@@ -40,12 +39,9 @@
   color: #ccc;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 768px) {
   .hamburger {
     display: block;
-  }
-  nav ul {
-    display: none;
   }
 }
 
