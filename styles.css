@@ -89,6 +89,7 @@ nav {
   }
   .home {
     background-image: url('long.jpg');
+    background-size: 150%;
   }
   
 }
