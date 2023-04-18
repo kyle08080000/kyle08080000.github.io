@@ -80,9 +80,9 @@ nav {
     padding-top: 200px; 
   }
   .hero {
-    background-image: url('Portfolio.jpg');
-    display: none;
+    background-image: none; 
   }
+  
 }
 /* * */
 * {
