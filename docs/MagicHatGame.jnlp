@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="1.0+" codebase="http://example.com/magichat" href="MagicHatGame.jar">
+  <information>
+    <title>Magic Hat Game</title>
+    <vendor>Your Name</vendor>
+    <homepage href="http://example.com/magichat"/>
+    <description>Magic Hat Game</description>
+  </information>
+  <resources>
+    <j2se version="1.8+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="MagicHatGame.jar" main="true"/>
+  </resources>
+  <application-desc main-class="com.example.MagicHatGame"/>
+</jnlp>
