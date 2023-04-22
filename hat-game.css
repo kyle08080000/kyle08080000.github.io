@@ -104,7 +104,7 @@ header {
   }
   
   .hero {
-    background-image: url('Portfolio.jpg');
+    background-image: url('resource/Portfolio.jpg');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;

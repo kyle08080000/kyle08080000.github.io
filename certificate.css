@@ -102,7 +102,7 @@ header {
   }
   
   .hero {
-    background-image: url('Certificate.jpg');
+    background-image: url('resource/Certificate.jpg');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
