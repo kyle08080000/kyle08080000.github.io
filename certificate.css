@@ -119,14 +119,15 @@ header {
     padding-top: 610px;
   }
   
-  .case-centered {
-    display: block;
-    position: absolute;
-    left: 50%;
-    top: 70%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
+  .title-container {
+    text-align: center;
+    padding: 5px 0;
   }
+
+  .title-container h1 {
+    font-size: 55px;
+  }
+
 
   .cases {
     display: grid;
