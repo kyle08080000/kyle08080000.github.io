@@ -34,39 +34,38 @@
       <h1></h1>
 <!--        <h2 class="case-centered">商品拍攝</h2>-->
       <section class="cases" id="instagram-cases">
-        <div class="case">
+        <div class="case" id="instagram1">
           <p></p>
           <img id="instagram-image1" class="image-mobile" src="resource/20.png" alt="Your description" />
         </div>
-        <div class="case case-desktop">
+        <div class="case case-desktop" id="instagram2">
           <h2></h2>
           <p></p>
           <img id="instagram-image2" src="resource/21.png" alt="Your description" />
         </div>
-        <div class="case case-desktop">
+        <div class="case case-desktop" id="instagram3">
           <h2></h2>
           <p></p>
           <img id="instagram-image3" src="resource/22.png" alt="Your description" />
         </div>
       </section>
-      <script>
-        $("img").fadeOut(100,function(){
-            $("#instagram-image1").fadeIn(600, function(){
-                $("#instagram-image2").fadeIn(600, function(){
-                    $("#instagram-image3").fadeIn(600, function(){
-                    });
-                });
-            });
-        });
-            
-      </script>
-      
+    
   </section>
   </main>
   <footer>
     <p>© 2023 KyleChang</p>
   </footer>
-
+    
+    <script>
+            $("#instagram1").fadeIn(600, function(){
+                $("#instagram2").fadeIn(600, function(){
+                    $("#instagram3").fadeIn(600, function(){
+                    });
+                });
+            });
+            
+      </script>
+    
   <script>
   // 漢堡選單點擊事件
   const hamburger = document.querySelector('.hamburger');
