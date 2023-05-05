@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="hat-game.css">
   <title>kyle作品集</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous">
+  </script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous">
+</script>
 </head>
 <body>
   <header>
@@ -30,53 +34,85 @@
     <div class="title-container">
       <h1>- 魔術帽遊戲 -</h1>
     </div>
-    <section class="cases">
-     <div class="case">
+<section class="cases" id="caseAll">
+     <div class="case" id="case1">
         <h2>遊戲內容</h2>
         <p>影片介紹</p>
         <iframe width="220" height="130" src="https://www.youtube.com/embed/v4pOxG-BP0s" title="YouTube video player"
-          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-                        gyroscope; picture-in-picture; web-share" allowfullscreen>
+          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
         </iframe>
      </div>
-      <div class="case">
+      <div class="case" id="case2">
         <img src="resource/image1.png" alt="案例1">
         <h2>概念設計</h2>
         <p>在這個遊戲中，魔術帽子是一個容器，可以隨機產生不同類型的問題或獎勵。
           玩家需要回答問題或完成挑戰，以獲得相應的獎勵。</p>
       </div>
-      <div class="case">
+      <div class="case" id="case3">
         <img src="resource/image2.png" alt="案例2">
         <h2>設計遊戲界面</h2>
         <p>為了讓玩家能夠輕鬆地與魔術帽子互動，設計一個直觀且易於使用的遊戲界面。
           包括選擇合適的顏色、字體和按鈕佈局，以及創建具有吸引力的背景圖像。</p>
       </div>
-      <div class="case">
+      <div class="case" id="case4">
         <img src="resource/image3.png" alt="案例3">
         <h2>編寫程式碼</h2>
         <p>在確定遊戲界面的設計後，需要編寫程式碼來實現魔術帽子的功能。
           包括設計數據結構來存儲問題和獎勵，以及實現隨機問題生成器。
           最後，還需要編寫事件處理程式碼來響應玩家的操作，例如選擇答案或領取獎勵。</p>
       </div>
-      <div class="case">
+      <div class="case" id="case5">
         <img src="resource/image4.png" alt="案例3">
         <h2>測試和調試</h2>
         <p>編寫完程式碼後，對遊戲進行測試，以確保其功能正常運行。
           檢查遊戲是否能夠正確地生成問題、處理玩家的選擇和獎勵，以及確保遊戲界面的顯示效果符合設計要求。
           在測試調適過程中，增加回答3個問題與想一個問題，依照要求對程式碼進行調試和修改。</p>
       </div>
-      <div class="case">
+      <div class="case" id="case6">
         <img src="resource/image5.png" alt="案例3">
         <h2>優化和完善</h2>
         <p>最後根據測試結果，對遊戲進行優化和完善。
           包括調整遊戲的難度、增加新的問題和獎勵類型，以及改進遊戲界面的美觀度。
           通過不斷優化，確保魔術帽遊戲能夠為玩家提供愉快的遊戲體驗。</p>
       </div>
-    </section>
+</section>
   </main>
   <footer>
     <p>&copy; 2023 KyleChang</p>
   </footer>
+    <script>
+            $(".case").fadeOut(100, function(){
+                
+                                    
+                
+                $("#case1").fadeIn(1000, function(){
+                    $("#case2").fadeIn(1000, function(){
+                        $("#case3").fadeIn(1000, function(){
+                            $("#case4").fadeIn(600, function(){
+                                $("#case5").fadeIn(600, function(){
+                                    $("#case6").fadeIn(600, function(){
+                
+                                    });
+                                });
+                            });
+                        });
+                    });
+                });
+             });       
+
+//        $("#btn").mouseout(function(){
+//                $("#div1").fadeOut(1000, "easeOutElastic", function(){
+//                   $("#div2").fadeOut({
+//                       duration:800,
+//                       easing:"easeInQuart",
+//                       complete: function(){
+////                           alert("完成！");
+//                       }
+//                   })
+//                });
+//            })
+    </script>
+    
   <script>
     // 漢堡選單點擊事件
     const hamburger = document.querySelector('.hamburger');
